@@ -61,3 +61,57 @@ Essas métricas são fundamentais para aplicações críticas, pois influenciam 
 
 > **Curso**: XP Inc. - Cloud com Inteligência Artificial
 > **Plataforma**: DIO
+
+---
+---
+
+# 📘 Resumo: Tipos de Serviço de Nuvem na Microsoft Azure
+
+Este documento resume os principais conceitos abordados no módulo **"Tipos de Serviço de Nuvem na Azure"**, incluindo os modelos de serviço (IaaS, PaaS e SaaS) e o modelo de responsabilidade compartilhada.
+
+## ☁️ Modelos de Serviço na Azure
+
+### 🔹 IaaS (Infrastructure as a Service)
+- **Responsabilidade do cliente:** Sistema operacional, middleware, runtime, dados e aplicações.
+- **Azure fornece:** Servidores, armazenamento, rede e virtualização.
+- **Exemplo:** Máquinas Virtuais (VMs), Virtual Network, Azure Storage.
+
+### 🔹 PaaS (Platform as a Service)
+- **Responsabilidade do cliente:** Apenas dados e aplicações.
+- **Azure fornece:** Infraestrutura + SO + middleware + runtime.
+- **Exemplo:** Azure App Services, Azure SQL Database, Azure Functions.
+
+### 🔹 SaaS (Software as a Service)
+- **Responsabilidade do cliente:** Uso e configuração do software.
+- **Azure (ou outro provedor) fornece:** Tudo – desde a infraestrutura até a aplicação.
+- **Exemplo:** Microsoft 365, Dynamics 365.
+
+---
+
+## 🔐 Modelo de Responsabilidade Compartilhada
+
+A segurança e conformidade na nuvem são compartilhadas entre o cliente e a Microsoft:
+
+| Camada                    | Responsabilidade           |
+|---------------------------|----------------------------|
+| Físico (datacenters)      | Microsoft                  |
+| Infraestrutura            | Microsoft                  |
+| Sistema Operacional       | Cliente (IaaS) / Microsoft (PaaS/SaaS) |
+| Aplicações                | Cliente (IaaS/PaaS) / Microsoft (SaaS) |
+| Dados e Identidade        | Cliente                    |
+| Controles de acesso       | Cliente                    |
+
+> 🔸 Quanto mais alto o nível de abstração (de IaaS para SaaS), menor é a responsabilidade do cliente.
+
+---
+
+## ✅ Revisão
+
+- IaaS: mais controle, mais responsabilidade.
+- PaaS: equilíbrio entre controle e facilidade.
+- SaaS: conveniência máxima, responsabilidade mínima.
+- Entender o modelo de responsabilidade é essencial para segurança, governança e conformidade.
+
+---
+
+📚 **Dica:** Consulte a [documentação oficial da Microsoft](https://learn.microsoft.com/azure) para aprofundar seu conhecimento sobre os modelos de serviço e segurança na nuvem Azure.
